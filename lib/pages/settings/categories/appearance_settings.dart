@@ -97,7 +97,7 @@ class _AppearanceSettingsPageState extends State<AppearanceSettingsPage> {
                       .primaryContainer
                       .withValues(alpha: 0.4),
                 ),
-                value: App().settings.initPage,
+                initialValue: App().settings.initPage,
                 items: [
                   DropdownMenuItem(
                     value: 0,
@@ -181,7 +181,7 @@ class _AppearanceSettingsPageState extends State<AppearanceSettingsPage> {
                       .primaryContainer
                       .withValues(alpha: 0.4),
                 ),
-                value: App().settings.playlistListview,
+                initialValue: App().settings.playlistListview,
                 items: [
                   DropdownMenuItem(
                     value: false,
@@ -241,7 +241,7 @@ class _AppearanceSettingsPageState extends State<AppearanceSettingsPage> {
                       .primaryContainer
                       .withValues(alpha: 0.4),
                 ),
-                value: App().settings.videoLibListview,
+                initialValue: App().settings.videoLibListview,
                 items: [
                   DropdownMenuItem(
                     value: false,

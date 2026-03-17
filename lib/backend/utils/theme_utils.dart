@@ -30,7 +30,7 @@ ThemeData getThemeData(App value, ColorScheme colorScheme) {
         fontSize: 12,
       ),
     ),
-    dialogTheme: DialogTheme(
+    dialogTheme: DialogThemeData(
       backgroundColor: colorScheme.surface,
       surfaceTintColor: Colors.transparent,
       barrierColor: colorScheme.surfaceTint.withValues(alpha: 0.1),

@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:path/path.dart' as p;
 import 'package:media_kit/media_kit.dart';
 
@@ -544,8 +545,7 @@ class PlayerPageState extends State<PlayerPage> {
         ),
         child: TooltipTheme(
           data: Theme.of(context).tooltipTheme.copyWith(
-                height: 4,
-                verticalOffset: 8,
+                constraints: BoxConstraints(minHeight: 4), verticalOffset: 8,
                 padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
               ),
           child: [
